@@ -1,7 +1,7 @@
 # Backend Take Home Assignment (MHA)
 
 Submission by: Chai Youxiang </br>
-Date: 12 September 2024
+Date of submission: 13 September 2024
 
 ## Backend API Implementation using Node.JS and Express.JS
 
@@ -103,4 +103,6 @@ const pinoHttpLogger = pinoHttp({ logger });
 
 ### 3. Validate the add and delete object requests.
 
-See sections [1.2](#1.2.-Add-new-object-/-entry) and [1.3](#1.3.-Delete-an-object-/-entry)
+Please refer to sections [1.2](#12-add-new-object--entry) and [1.3](#13-delete-an-object--entry)
+
+### 4. Create a couple of unit tests cases to test out the endpoints.
