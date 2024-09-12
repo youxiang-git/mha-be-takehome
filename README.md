@@ -7,33 +7,51 @@ Date: 12 September 2024
 
 ### Tasks
 
-1. Create a backend API using Express.js server with 3 endpoints:
+1. Create a backend API with 3 endpoints:
 
-    - GET request to fetch an object by ID from JSON object.
-    - POST request to add a new object.
-    - DELETE request to delete an object by ID.
+    - GET request - Get an object by ID from a list of JSON object.
+    - POST request - Add a new object.
+    - DELETE request - Delete an object (should pass in an ID or some identifier).
 
 2. Log all requests to the backend.
 
-3. Validate the requests for adding and deleting objects.
+3. Validate the add and delete object requests.
 
-4. Create simple unit tests using Jest or another testing framework.
+4. Create a couple of unit tests cases to test out the endpoints.
 
-5. Implement dependency injection for handling object processing.
+5. Implement dependency injection.
 
-**Bonus:** Deploy the API to a cloud provider.
+**Bonus:** Deploy the above app to the cloud.
+
+## Overview
+
+### Installed dependencies:
+
+<ul>
+    <li> Express.JS - For our backend server</li>
+    <li> Nodemon - Live reload (installed as DevDependency) </li>
+    <li> JOI - HTTP Request Validation for JSON request body </li>
+    <li> Pino - Middleware for logging all requests to server </li>
+    <li> JEST - Testing </li>
+</ul>
+
+### File structure:
+
+```
+mha-be-takehome/
+├── .git/
+├── node_modules/
+├── .gitignore
+├── app.js              // App's entry point
+├── data.json           // Dummy data to be loaded
+├── package-lock.json
+├── package.json
+├── README.md
+└── utils.js            // Module for utility functions
+```
 
 ## Implementation
 
 ### 1. Create a backend API using Express.js server with 3 endpoints:
-
-Installed dependencies:
-
-<ul>
-    <li> Express.JS </li>
-    <li> Nodemon (for live reload - under DevDependency) </li>
-    <li> Morgan (middleware for logging) </li>
-    <li> JEST (testings) </li>
-</ul>
 
 #### 1.1. GET request to fetch an object by ID from JSON object.
