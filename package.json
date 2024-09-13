@@ -5,12 +5,17 @@
 	"scripts": {
 		"test": "mocha",
 		"serve": "node app.js",
-		"dev": "nodemon app.js"
+		"dev": "nodemon app.js",
+		"build": "echo 'Don't need to build'"
+	},
+	"engines": {
+		"node": ">=14",
+		"npm": ">=6"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "chai youxiang",
 	"license": "ISC",
-	"description": "",
+	"description": "MHA backend takehome assignment",
 	"dependencies": {
 		"express": "^4.21.0",
 		"joi": "^17.13.3",

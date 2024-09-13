@@ -14,7 +14,7 @@ const logger = pino({
 	},
 });
 const pinoHttpLogger = pinoHttp({ logger });
-const port = 3000;
+const port = 8080;
 const statsService = new StatsService();
 const injectStatsService = (statsService) => (req, res, next) => {
 	req.statsService = statsService;
